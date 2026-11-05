@@ -58,6 +58,16 @@ window.PORTFOLIO = {
   // category is used by the filter buttons. image is optional.
   projects: [
     {
+      title: "NEXUS AI — Agentic Chatbot",
+      description: "Agentic AI assistant built with LangGraph that decides when to reason and when to call tools: live web search, stock quotes, weather, and math tools served from a local MCP server. Real-time token streaming with a live tool-call timeline, persistent SQLite memory (search, rename, delete, export chats) and a fully animated Streamlit UI.",
+      image: "assets/nexus-ai.jpg",
+      tags: ["LangGraph", "MCP", "OpenAI", "Streamlit", "SQLite", "Tool calling"],
+      category: "Agentic AI",
+      github: "https://github.com/Parth6755/nexus-ai-chatbot",
+      live: "https://nexus-ai-chatbot-u9oi.onrender.com",
+      featured: true,
+    },
+    {
       title: "ResearchMind AI",
       description: "Multi-agent system for deep research built with LangGraph — specialized agents handle research, information gathering and report generation. External tools connected via MCP, FastAPI backend with a React frontend, deployed publicly on Render. LLM evaluation with LangSmith, RAGAS and DeepEval in progress.",
       image: "",
