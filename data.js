@@ -18,7 +18,7 @@ window.PORTFOLIO = {
   location: "Nürnberg, Germany",
   email: "Parthvaghasiya1711@gmail.com",
   availableForWork: true, // shows the green "Available for work" badge
-  photo: "", // e.g. "assets/me.jpg" — leave empty to show your initials
+  photo: "assets/parth.jpg", // leave empty "" to show your initials instead
   resume: "", // e.g. "assets/resume.pdf" — leave empty to hide the button
 
   // The small floating cards around your photo
