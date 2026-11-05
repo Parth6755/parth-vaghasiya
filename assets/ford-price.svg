@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071a33"/><stop offset="1" stop-color="#0c2a4a"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00d4ff"/><stop offset="1" stop-color="#7c5cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <text x="80" y="110" fill="#ffffff" font-size="64" font-weight="700">Ford Car Price Prediction</text>
+  <text x="80" y="165" fill="#9cc3e6" font-size="32">18,000 UK listings · price drops as mileage goes up</text>
+
+  <!-- Chart -->
+  <g transform="translate(130 230)">
+    <rect width="900" height="560" rx="24" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".12"/>
+    <g stroke="#ffffff" stroke-opacity=".08">
+      <line x1="90" y1="120" x2="860" y2="120"/><line x1="90" y1="230" x2="860" y2="230"/>
+      <line x1="90" y1="340" x2="860" y2="340"/><line x1="90" y1="450" x2="860" y2="450"/>
+    </g>
+    <line x1="90" y1="40" x2="90" y2="470" stroke="#9cc3e6" stroke-width="3"/>
+    <line x1="90" y1="470" x2="870" y2="470" stroke="#9cc3e6" stroke-width="3"/>
+    <text x="60" y="260" fill="#9cc3e6" font-size="26" text-anchor="middle" transform="rotate(-90 60 260)">Price (£)</text>
+    <text x="480" y="530" fill="#9cc3e6" font-size="26" text-anchor="middle">Mileage</text>
+    <g fill="#00d4ff" fill-opacity=".75">
+      <circle cx="130" cy="95" r="9"/><circle cx="165" cy="130" r="9"/><circle cx="190" cy="85" r="9"/><circle cx="220" cy="150" r="9"/>
+      <circle cx="250" cy="120" r="9"/><circle cx="285" cy="175" r="9"/><circle cx="310" cy="140" r="9"/><circle cx="345" cy="200" r="9"/>
+      <circle cx="380" cy="180" r="9"/><circle cx="410" cy="235" r="9"/><circle cx="445" cy="210" r="9"/><circle cx="480" cy="260" r="9"/>
+      <circle cx="515" cy="245" r="9"/><circle cx="550" cy="300" r="9"/><circle cx="585" cy="280" r="9"/><circle cx="620" cy="330" r="9"/>
+      <circle cx="655" cy="315" r="9"/><circle cx="690" cy="365" r="9"/><circle cx="725" cy="350" r="9"/><circle cx="760" cy="395" r="9"/>
+      <circle cx="800" cy="385" r="9"/><circle cx="830" cy="420" r="9"/><circle cx="270" cy="105" r="9"/><circle cx="600" cy="360" r="9"/>
+    </g>
+    <line x1="110" y1="95" x2="850" y2="420" stroke="url(#line)" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <!-- R2 card -->
+  <g transform="translate(1100 260)">
+    <rect width="420" height="230" rx="24" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".15"/>
+    <text x="34" y="56" fill="#9cc3e6" font-size="24" font-weight="600" letter-spacing="2">MODEL ACCURACY (R²)</text>
+    <text x="34" y="160" fill="#9cc3e6" font-size="64" font-weight="700">0.73</text>
+    <text x="185" y="155" fill="#ffffff" font-size="56">→</text>
+    <text x="260" y="160" fill="#4ade80" font-size="76" font-weight="800">0.84</text>
+    <text x="34" y="205" fill="#ffffff" font-size="24">with one-hot encoding</text>
+  </g>
+
+  <!-- Car mini -->
+  <g transform="translate(1130 560) scale(.42)">
+    <path d="M30 270 C30 220 60 205 120 195 L250 180 C300 120 360 85 450 82 L590 82 C660 82 710 120 760 180 L820 192 C860 200 880 225 880 260 L880 290 C880 305 870 312 855 312 L40 312 C32 312 30 300 30 290 Z" fill="url(#line)"/>
+    <path d="M285 180 C325 130 370 110 440 108 L500 108 L500 180 Z" fill="#071a33" opacity=".75"/>
+    <path d="M525 108 L590 108 C640 108 680 135 715 180 L525 180 Z" fill="#071a33" opacity=".75"/>
+    <g fill="#071a33" stroke="#cfe3ff" stroke-width="18"><circle cx="210" cy="312" r="62"/><circle cx="700" cy="312" r="62"/></g>
+  </g>
+
+  <text x="80" y="850" fill="#9cc3e6" font-size="24">Linear Regression · EDA · Pandas · scikit-learn</text>
+</svg>

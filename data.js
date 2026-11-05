@@ -70,11 +70,11 @@ window.PORTFOLIO = {
     {
       title: "ResearchMind AI",
       description: "Multi-agent system for deep research built with LangGraph — specialized agents handle research, information gathering and report generation. External tools connected via MCP, FastAPI backend with a React frontend, deployed publicly on Render. LLM evaluation with LangSmith, RAGAS and DeepEval in progress.",
-      image: "",
+      image: "assets/researchmind.jpg",
       tags: ["LangGraph", "LangChain", "MCP", "FastAPI", "React", "Render"],
       category: "Agentic AI",
       github: "https://github.com/Parth6755/researchmind-ai",
-      live: "",
+      live: "https://researchmind-ai-frontend-xvhe.onrender.com/",
       featured: true,
     },
     {
@@ -100,7 +100,7 @@ window.PORTFOLIO = {
     {
       title: "AutoLux — Car Price Prediction",
       description: "Full-stack used-car price estimator: a Random Forest model served by a FastAPI backend (/predict, /health) with Pydantic validation, plus a Streamlit frontend — deployed as two services on Render.",
-      image: "",
+      image: "assets/autolux-car-price.svg",
       tags: ["Random Forest", "FastAPI", "Pydantic", "Streamlit", "Render"],
       category: "Machine Learning",
       github: "https://github.com/Parth6755/car-price-prediction-full-stack-",
@@ -110,7 +110,7 @@ window.PORTFOLIO = {
     {
       title: "CardioCheck — Heart Stroke Risk",
       description: "Streamlit app estimating heart disease risk from 11 clinical inputs. Compared five classifiers on 918 patient records and deployed the best (KNN, 85.3% accuracy). Fixed a feature-order mismatch with a saved column schema.",
-      image: "",
+      image: "assets/heart-risk.svg",
       tags: ["scikit-learn", "KNN", "Streamlit", "EDA"],
       category: "Machine Learning",
       github: "https://github.com/Parth6755/heart-stroke-risk-predictor",
@@ -140,7 +140,7 @@ window.PORTFOLIO = {
     {
       title: "Ford Car Price Prediction",
       description: "Linear regression on about 18,000 used Ford listings in the UK. Comparing one-hot vs label encoding raised R² from 0.73 to 0.84.",
-      image: "",
+      image: "assets/ford-price.svg",
       tags: ["scikit-learn", "Pandas", "Regression"],
       category: "Machine Learning",
       github: "https://github.com/Parth6755/ford-car-price-prediction",

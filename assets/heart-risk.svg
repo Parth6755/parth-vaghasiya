@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f0a1c"/><stop offset="1" stop-color="#0d0d24"/>
+    </linearGradient>
+    <linearGradient id="heart" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff5c8a"/><stop offset="1" stop-color="#e11d48"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ff4e7a" stop-opacity=".5"/><stop offset="1" stop-color="#ff4e7a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gauge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22c55e"/><stop offset=".5" stop-color="#f59e0b"/><stop offset="1" stop-color="#ef4444"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ff7aa2" stroke-opacity=".07"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+
+  <text x="80" y="110" fill="#ffffff" font-size="64" font-weight="700">Heart Disease Risk Prediction</text>
+  <text x="80" y="165" fill="#d6a8bd" font-size="32">Clinical data in → AI risk score out, in seconds</text>
+
+  <!-- Heart with ECG -->
+  <circle cx="470" cy="500" r="290" fill="url(#glow)"/>
+  <path d="M470 720 C 300 600 200 510 200 400 C 200 320 260 260 335 260 C 395 260 440 295 470 345 C 500 295 545 260 605 260 C 680 260 740 320 740 400 C 740 510 640 600 470 720 Z" fill="url(#heart)"/>
+  <path d="M80 480 H300 L330 430 L365 560 L405 360 L445 520 L470 480 H640 L665 450 L690 480 H860" fill="none" stroke="#ffffff" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Inputs card -->
+  <g transform="translate(900 230)">
+    <rect width="620" height="260" rx="24" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".15"/>
+    <text x="34" y="54" fill="#d6a8bd" font-size="24" font-weight="600" letter-spacing="2">PATIENT DATA</text>
+    <g font-size="28" fill="#ffffff">
+      <text x="34" y="110">Age</text><text x="290" y="110" text-anchor="end" font-weight="700">54</text>
+      <text x="34" y="160">Blood pressure</text><text x="290" y="160" text-anchor="end" font-weight="700">140</text>
+      <text x="34" y="210">Cholesterol</text><text x="290" y="210" text-anchor="end" font-weight="700">239</text>
+      <text x="330" y="110">Max heart rate</text><text x="590" y="110" text-anchor="end" font-weight="700">160</text>
+      <text x="330" y="160">Chest pain</text><text x="590" y="160" text-anchor="end" font-weight="700">ATA</text>
+      <text x="330" y="210">Exercise angina</text><text x="590" y="210" text-anchor="end" font-weight="700">No</text>
+    </g>
+  </g>
+
+  <!-- Risk gauge card -->
+  <g transform="translate(900 520)">
+    <rect width="620" height="230" rx="24" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".15"/>
+    <text x="34" y="54" fill="#d6a8bd" font-size="24" font-weight="600" letter-spacing="2">PREDICTED RISK</text>
+    <text x="34" y="135" fill="#4ade80" font-size="76" font-weight="800">LOW</text>
+    <text x="34" y="180" fill="#ffffff" font-size="28">23% probability</text>
+    <g transform="translate(450 175)">
+      <path d="M-120 0 A120 120 0 0 1 120 0" fill="none" stroke="url(#gauge)" stroke-width="26" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="-82" y2="-72" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+      <circle r="14" fill="#ffffff"/>
+    </g>
+  </g>
+
+  <text x="80" y="840" fill="#d6a8bd" font-size="24">KNN model · 85.3% accuracy · 918 patient records · Streamlit app</text>
+</svg>

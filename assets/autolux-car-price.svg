@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1630"/><stop offset="1" stop-color="#1b0f3a"/>
+    </linearGradient>
+    <linearGradient id="car" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00d4ff"/><stop offset="1" stop-color="#7c5cff"/>
+    </linearGradient>
+    <linearGradient id="tag" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22c55e"/><stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity=".45"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <ellipse cx="560" cy="520" rx="520" ry="300" fill="url(#glow)"/>
+
+  <!-- Title -->
+  <text x="80" y="110" fill="#ffffff" font-size="64" font-weight="700">Used Car Price Prediction</text>
+  <text x="80" y="165" fill="#9fb3d9" font-size="32">Enter car details → AI estimates a fair price instantly</text>
+
+  <!-- Car -->
+  <g transform="translate(110 330)">
+    <ellipse cx="420" cy="345" rx="400" ry="22" fill="#000" opacity=".35"/>
+    <path d="M30 270 C30 220 60 205 120 195 L250 180 C300 120 360 85 450 82 L590 82 C660 82 710 120 760 180 L820 192 C860 200 880 225 880 260 L880 290 C880 305 870 312 855 312 L40 312 C32 312 30 300 30 290 Z" fill="url(#car)"/>
+    <path d="M285 180 C325 130 370 110 440 108 L500 108 L500 180 Z" fill="#0b1630" opacity=".75"/>
+    <path d="M525 108 L590 108 C640 108 680 135 715 180 L525 180 Z" fill="#0b1630" opacity=".75"/>
+    <rect x="845" y="225" width="30" height="16" rx="6" fill="#fff7cc"/>
+    <rect x="34" y="228" width="22" height="14" rx="5" fill="#ff4e6a"/>
+    <g fill="#0b0b14" stroke="#cfd8ff" stroke-width="10">
+      <circle cx="210" cy="312" r="62"/><circle cx="700" cy="312" r="62"/>
+    </g>
+    <circle cx="210" cy="312" r="22" fill="#cfd8ff"/><circle cx="700" cy="312" r="22" fill="#cfd8ff"/>
+  </g>
+
+  <!-- Input chips -->
+  <g font-size="26" fill="#e7ecff">
+    <g transform="translate(110 245)">
+      <rect width="200" height="54" rx="27" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".18"/>
+      <text x="100" y="36" text-anchor="middle">📅 2017</text>
+    </g>
+    <g transform="translate(330 245)">
+      <rect width="230" height="54" rx="27" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".18"/>
+      <text x="115" y="36" text-anchor="middle">🛣️ 45,000 km</text>
+    </g>
+    <g transform="translate(580 245)">
+      <rect width="190" height="54" rx="27" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".18"/>
+      <text x="95" y="36" text-anchor="middle">⛽ Diesel</text>
+    </g>
+    <g transform="translate(790 245)">
+      <rect width="200" height="54" rx="27" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".18"/>
+      <text x="100" y="36" text-anchor="middle">⚙️ Manual</text>
+    </g>
+  </g>
+
+  <!-- Arrow to model -->
+  <path d="M1010 520 L1090 520" stroke="#9fb3d9" stroke-width="6" stroke-dasharray="4 14" stroke-linecap="round"/>
+  <path d="M1085 505 L1105 520 L1085 535" fill="none" stroke="#9fb3d9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Model + price -->
+  <g transform="translate(1130 300)">
+    <rect width="390" height="140" rx="24" fill="#ffffff" fill-opacity=".07" stroke="#7c5cff" stroke-opacity=".7" stroke-width="2"/>
+    <g transform="translate(40 32)" stroke="#a78bfa" stroke-width="4" fill="none">
+      <path d="M38 0 L38 76 M38 18 L12 46 M38 18 L64 46 M12 46 L0 76 M12 46 L24 76 M64 46 L52 76 M64 46 L76 76"/>
+    </g>
+    <text x="140" y="62" fill="#ffffff" font-size="32" font-weight="700">Random Forest</text>
+    <text x="140" y="102" fill="#9fb3d9" font-size="24">FastAPI · /predict</text>
+
+    <g transform="translate(0 175)">
+      <path d="M40 0 H390 V200 H40 L0 100 Z" fill="url(#tag)"/>
+      <circle cx="44" cy="100" r="14" fill="#0b1630"/>
+      <text x="215" y="68" fill="#05301b" font-size="26" font-weight="600" text-anchor="middle">ESTIMATED PRICE</text>
+      <text x="215" y="140" fill="#ffffff" font-size="72" font-weight="800" text-anchor="middle">₹ 5.4 L</text>
+      <text x="215" y="180" fill="#05301b" font-size="24" text-anchor="middle">fair market value</text>
+    </g>
+  </g>
+
+  <!-- Footer tech -->
+  <g font-size="24" fill="#9fb3d9">
+    <text x="80" y="840">scikit-learn  ·  FastAPI  ·  Pydantic  ·  Streamlit  ·  Render</text>
+  </g>
+</svg>
